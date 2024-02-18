@@ -1,0 +1,49 @@
+/* EditUserModal.css */
+
+.edit-modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; /* Ensures it's above other content */
+}
+
+
+
+.edit-modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.edit-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+  }
+
+.cancel-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 70px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add additional styles as needed */

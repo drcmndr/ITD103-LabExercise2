@@ -1,0 +1,216 @@
+/* styles.css */
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 10px;
+    padding-left: 100px; /* Add space on the left side */
+    padding-right: 100px; /* Add space on the right side */
+  }
+  
+  .header {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+
+  .search-wrapper {
+    position: relative;
+    width: 100%; /* Make sure this is set to define the bounds of the absolute positioning */
+    max-width: 900px; /* Set the width of the search bar */
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 900px; /* Set the width of the search bar */
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #a7a7a7;
+    border-radius: 24px;
+    padding-left: 40px;
+    background-color: #dfdfdf;
+  }
+
+  .fa-magnifying-glass {
+    position: absolute;
+    left: 15px;
+    top: 58%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #acacac;
+    z-index: 10;
+  }
+
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto; /* Center the list */
+  }
+  
+  .user-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-item button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Apply styles to form and input elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="submit"] {
+    padding: 10px;
+    margin: 0 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+  }
+  
+  /* Style for the form submit button */
+  form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #218838;
+  }
+
+  /* Style the Table */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .edit-btn {
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text for better readability */
+    
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red color */
+    color: white; /* White text for better readability */
+    
+  }
+  
+  /* You might also want to add hover effects for these buttons */
+  .edit-btn:hover {
+    background-color: #0056b3; /* A darker shade of blue for hover */
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333; /* A darker shade of red for hover */
+  }
+  
+  .add-user-btn {
+    background-color: #28a745; /* A shade of green */
+    color: white; /* White text */
+    font-size: 1.1em; /* Slightly larger text */
+    padding: 10px 20px; /* Top and bottom padding, left and right padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    margin-top: 20px; /* Space from the top */
+    margin-bottom: 20px; /* Space from the bottom */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .add-user-btn:hover {
+    background-color: #218838; /* A darker shade of green for hover effect */
+  }
+
+  .no-matches {
+    text-align: center;
+    padding: 20px;
+    color: #666; /* or any color that suits your design */
+  }
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 1.5em;
+    }
+  
+    .search-bar, form input[type="text"], form input[type="email"], form input[type="number"] {
+      width: calc(100% - 20px); /* Adjust width on smaller screens */
+    }
+  }
+  

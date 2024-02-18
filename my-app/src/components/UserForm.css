@@ -1,0 +1,73 @@
+/* UserForm.css */
+
+.form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* High z-index to overlay on top of other content */
+  }
+  
+  .user-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+  
+  .cancel-btn, .submit-btn {
+    flex: none; /* Do not grow or shrink */
+    margin: 10px; /* Provide some space around the buttons */
+  }
+
+  .cancel-btn {
+    background-color: #ccc;
+    color: black;
+    padding: 10px 40px; /* Keep the padding consistent */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .user-form .form-actions .cancel-btn {
+    background-color: #ccc;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: none; /* Do not grow or shrink */
+  }
+  
+   .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 40px; /* Adjust padding to be larger than the Cancel button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .user-form .form-actions .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 30px; /* Increase padding to make the button larger */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: none; /* Do not grow or shrink */
+  }
+
+  
+  
